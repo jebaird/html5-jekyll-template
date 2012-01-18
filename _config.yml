@@ -27,5 +27,4 @@ owner_name:         "*your name*"
 owner_page:         "*your homepage*"
 owner_mail:         "*your email*"
 
-paginate: 3
-paginate_file: frontpage.html
+paginate: 5
