@@ -17,7 +17,6 @@ rdiscount:
   extensions: [smart]
 
 exclude: ["README.md", "LICENSE.md", "TODO.md", "build", "test"]
-include: []
 
 title: 	"*your site's title*"
 slogan: "*your site's slogan*"
