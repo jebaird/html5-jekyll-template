@@ -1,0 +1,28 @@
+safe:        true
+auto:        true
+server:      true
+baseurl:     /
+
+future:      true
+lsi:         false
+pygments:    true
+markdown:    rdiscount
+permalink:   /:year/:month/:title/
+
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+
+rdiscount:
+  extensions: [smart]
+
+exclude: ["README.md", "LICENSE.md", "TODO.md", "build", "test"]
+include: []
+
+title: 	"*your site's title*"
+slogan: "*your site's slogan*"
+url:    "/"
+
+owner_name:         "*your name*"
+owner_page:         "*your homepage*"
+owner_mail:         "*your email*"
