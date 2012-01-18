@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article id="{{ post.id }}" class="post">
+<article id="{{ post.id }}" class="single post">
 	<header> 
 		<h1>{{ post.title }}</h1>
 		<p class="meta"><a href="{{ post.url }}"><time datetime="{{ post.date | date_to_xmlschema }}" pubdate>{{ post.date | date: "%B %d, %Y" }}</time></a></p>
