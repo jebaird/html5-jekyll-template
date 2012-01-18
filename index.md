@@ -5,7 +5,9 @@ title: Welcome to Your New, Shiny Blog
 
 Write something about wwwwwtf?!
 
-See the <a href="/frontpage/index.html">frontpage</a> in action.
+## Test Posts
+
+Browse them on [this page](/testposts.html)
 
 ## First Steps
 
