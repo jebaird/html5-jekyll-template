@@ -17,7 +17,6 @@ rdiscount:
   extensions: [smart]
 
 exclude: ["README.md", "LICENSE.md", "TODO.md", "build", "test"]
-include: ["frontpage/"]
 
 title: 	"*your site's title*"
 slogan: "*your site's slogan*"
@@ -26,6 +25,3 @@ url:    "/"
 owner_name:         "*your name*"
 owner_page:         "*your homepage*"
 owner_mail:         "*your email*"
-
-paginate: 3
-paginate_file: "frontpage/index.html"
