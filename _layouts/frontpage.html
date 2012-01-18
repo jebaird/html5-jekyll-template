@@ -1,16 +1,25 @@
 ---
 layout: default
+title: Post Index
 ---
 
+<!-- iterate through the posts on this page -->
+{% for post in paginator.posts %}
+	<article class="post">
+		<header>
+			<h1 class="post-title">{{ post.title }}</a></h1>
+			<p class="post-meta"><a href="{{ post.url }}"><time class="post-date" datetime="{{ post.date | date_to_xmlschema }}" pubdate>{{ post.date | date: "%B %d, %Y" }}</time></a> by </p>
+		</header>
+		{{ post.content }}
+	</article>
+{% endfor %}
 
-	{% for ps in site.posts %}
-		<article>
-			<header class="post-header">
-				<hgroup>
-					<h1><a href="{{ ps.url }}">{{ ps.title }}</a></h1>
-					<time datetime="{{ ps.date }}" pubdate>{{ ps.date }}</time>
-				</hgroup>
-			</header>
-			{{ ps.content }}
-		</article>
-	{% endfor %}
+<!-- links to prev and next pages for browsing thru archives -->
+{% if paginator.previous_page == 1 %}
+<span id="newer"><a href="/">&laquo;&laquo; Newer Entries</a></span>
+{% elsif paginator.previous_page %}
+<span id="newer"><a href="/page{{ paginator.previous_page }}">&laquo;&laquo; Newer Entries</a></span>
+{% endif %}
+{% if paginator.next_page %}
+<span id="older"><a href="/page{{ paginator.next_page }}">Older Entries &raquo;&raquo;</a></span>
+{% endif %}
