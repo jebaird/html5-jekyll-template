@@ -31,7 +31,8 @@
 		</div>
 
 		<footer>
-			<p>This is <a href="{{ site.owner_page }}">{{ site.owner_name }}</a>'s new blog. If you have any comments or suggestions, please send an <a href="mailt:{{ site.owner_email }}">email</a>. If you want to learn more about me or this blog, please check out the <a href="/about.html">about</a>-page.</p>
+			<p>This is <a href="{{ site.owner_page | cgi_escape }}">{{ site.owner_name }}</a>'s new blog. If you have any comments or suggestions, please send an <a href="mailto:{{ site.owner_mail | cgi_escape }}">email</a>. If you want to learn more about me or this blog, please check out the <a href="/about.html">about</a>-page.</p>
+			<p>This page is valid <a href="http://html5.validator.nu/?doc={{ page.url }}">HTML5</a> and <a href="http://http://jigsaw.w3.org/css-validator/check/referer/">CSS3</a>.</p>
 		</footer>
 	</div>
 </body>

@@ -3,11 +3,15 @@ layout: default
 title: Welcome to Your New, Shiny Blog!
 ---
 
+<header class="invisible">
+	<h1>Posts</h1>
+</header>
+
 <!-- iterate through the posts on this page -->
 {% for post in paginator.posts %}
 	<article class="index post">
 		<header>
-			<h1>{{ post.title | markdownify }}</h1>
+			<h1>{{ post.title | markdownify | strip_html }}</h1>
 			<p class="meta"><a href="{{ post.url }}"><time datetime="{{ post.date | date_to_xmlschema }}" pubdate>{{ post.date | date: "%B %d, %Y" }}</time></a></p>
 		</header>
 		{{ post.content | postmorefilter: page.url, "Read the rest of this entry" }}
@@ -15,6 +19,9 @@ title: Welcome to Your New, Shiny Blog!
 {% endfor %}
 
 <aside class="pagination">
+	<header class="invisible">
+		<h1>Pagination</h1>
+	</header>
 	<!-- links to prev and next pages for browsing thru archives -->
 	{% if paginator.previous_page == 1 %}
 		<span id="newer"><a href="/">&laquo;&laquo; Newer Entries</a></span>
