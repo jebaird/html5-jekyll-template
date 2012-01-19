@@ -1,7 +1,7 @@
 /**
  * Grid
  */
-#grid{
+#grid {
 
     /* Dimensions - same width as your grid with gutters */
     width: 980px;
@@ -26,7 +26,7 @@
  * Set the column width taking the borders into consideration,
  * and use margins to set column gutters.
  */
-#grid div.vert{
+#grid div.vert {
 
     width: 139px;
     border: solid darkturquoise;
@@ -35,7 +35,7 @@
 
 }
 
-#grid div.vert.first-line{
+#grid div.vert.first-line {
 
     margin-left: 19px;
 
@@ -48,7 +48,7 @@
  * Remember, the CSS properties that define the box model:
  * visible height = height + borders + margins + padding
  */
-#grid div.horiz{
+#grid div.horiz {
 
     /* 20px line height */
     height: 19px;
@@ -64,20 +64,20 @@
 * When using more than one grid, remember to set the numberOfGrids 
 * option in the hashgrid.js file.
 */
-#grid.grid-1 div.vert{
+#grid.grid-1 div.vert {
 
     /* Vertical grid line colour for grid 1 */
     border-color: darkturquoise;
 
 }
-#grid.grid-2{
+#grid.grid-2 {
 
     /* Adjustments */
     padding: 0 160px;
     width: 660px;
 
 }
-#grid.grid-2 div.vert{
+#grid.grid-2 div.vert {
 
     /* Vertical grid line colour for grid 2 */
     border-color: crimson;
