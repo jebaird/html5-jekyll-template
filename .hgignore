@@ -1,13 +1,13 @@
 # Numerous always-ignore extensions
-glob:.diff
-glob:.err
-glob:.orig
-glob:.log
-glob:.rej
-glob:.swo
-glob:.swp
-glob:.vi
-glob:~
+glob:*.diff
+glob:*.err
+glob:*.orig
+glob:*.log
+glob:*.rej
+glob:*.swo
+glob:*.swp
+glob:*.vi
+glob:*~
 
 # OS or Editor folders
 glob:.DS_Store
