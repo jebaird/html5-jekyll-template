@@ -4,19 +4,21 @@ README
 Quickstart
 ----------
 
-I know you're impatient. So am I. Here you go! There are mirrors for [hg][] and [git][]
+I know you're impatient. So am I. Here you go!
+
+### Get the Code
 
 Either ownload the current version from [github][gitdl] or [bitbucket][hgdl] or you check out the source code from [bitbucket][hg] or [github][git].
 
-### hg
+#### hg
 
 	hg clone https://bitbucket.org/bobschi/html5-jekyll-template
 
-### git
+#### git
 
 	git clone git://github.com/bobschi/html5-jekyll-template.git
 	
-### Run it
+#### Run it
 
 Now just navigate to the new directory in the shell of your choice, and execute jekyll.
 
@@ -34,6 +36,22 @@ What?
 -----
 
 This is a starting point, with some basic templates and code in place to make your life easier. HTML5 and CSS3 compliant, as there's not much that could create trouble. Mind you: This is a *starting point*. You will have to add to it. I will share another version of this soon, which will include Foundation, #grid and Disqus, as I have decided to redesign my blog using those tools.
+
+License
+-------
+
+Shared under [The Unlicense][unlicense]. See `LICENSE.md`. Basically, do whatever you want with it. Have fun. Share. Create. Be awesome.
+
+Thanks
+------
+
+A special thanks to [Markus "Cypher" Prinz][Cypher] who brought me to Jekyll and Github Pages in the first place.
+
+A shout out to Vito Botta for his blog post [Migrating from Wordpress to Jekyll - Part 2: **Everything** you need to know about Jekyll][migratewpjekyll] -- I've found some pretty helpful  hints in there.
+
+Thank you [Paul Irish][paulirish] and the numerous commiters to the [HTML5 Boilerplate][boilerplate] project on [github][boilerplaterepomem] -- you guys are awesome.
+
+Another shoutout to [Jacques Fortier][jqf] for his [postmore][] plugin!
 
 Find Your Way Around
 --------------------
@@ -70,12 +88,26 @@ Some of the files are still missing. They will be added shortly.
 Libraries Used
 --------------
 
-- [html5shiv][] -- MIT or GPL Version 2 licenses
+- [html5shiv][] -- [MIT][] or [GPL][] Version 2 licenses
+- [postmore][] -- by Jacques Fortier
 
-[html5shiv]:	http://code.google.com/p/html5shiv/
-[html5jbp]:		https://github.com/bobschi/HTML5-Boilerplate-Jekyll-Template
-[blog]:			http://lebobs.ch/
-[hg]:			https://bitbucket.org/bobschi/html5-jekyll-template
-[hgdl]:			https://bitbucket.org/bobschi/html5-jekyll-template/downloads
-[git]:			https://github.com/bobschi/html5-jekyll-template
-[gitdl]:		https://github.com/bobschi/html5-jekyll-template/downloads
+[html5shiv]:			http://code.google.com/p/html5shiv/
+[html5jbp]:				https://github.com/bobschi/HTML5-Boilerplate-Jekyll-Template
+[blog]:					http://lebobs.ch/
+[hg]:					https://bitbucket.org/bobschi/html5-jekyll-template
+[hgdl]:					https://bitbucket.org/bobschi/html5-jekyll-template/downloads
+[git]:					https://github.com/bobschi/html5-jekyll-template
+[gitdl]:				https://github.com/bobschi/html5-jekyll-template/downloads
+[postmore]:				http://www.jacquesf.com/2011/03/creating-excerpts-in-jekyll-with-wordpress-style-more-html-comments/
+[cypher]: 				http://nuclearsquid.com/
+[paulirish]: 			http://paulirish.com/
+[andyclarke]: 			http://stuffandnonsense.co.uk/
+[boilerplaterepomem]: 	https://github.com/paulirish/html5-boilerplate/network/members
+[boilerplate]: 			http://html5boilerplate.com/
+[migratewpjekyll]: 		http://vitobotta.com/how-to-migrate-from-wordpress-to-jekyll/
+[unlicense]: 			http://unlicense.org/
+[mit]: 					http://opensource.org/licenses/mit-license.php
+[bsd]: 					http://www.opensource.org/licenses/bsd-license.php
+[gpl]: 					http://www.gnu.org/licenses/gpl.html
+[jqf]:					http://www.jacquesf.com/
+[postmore]:				http://www.jacquesf.com/2011/03/creating-excerpts-in-jekyll-with-wordpress-style-more-html-comments/
