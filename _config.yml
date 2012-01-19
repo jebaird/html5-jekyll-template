@@ -26,4 +26,4 @@ owner_name:         "*your name*"
 owner_page:         "*your homepage*"
 owner_mail:         "*your email*"
 
-pagination: 5
+paginate: 5

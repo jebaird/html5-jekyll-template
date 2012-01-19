@@ -26,3 +26,22 @@ title: Welcome to Your New, Shiny Blog!
 	{% endif %}
 </aside>
 
+<div>
+	<h1>paginator debug info</h1>
+	<dl>
+		<dt>paginator.per_page</dt>
+		<dd>{{ paginator.per_page }}</dd>
+		<dt>paginator.posts</dt>
+		<dd>{{ paginator.posts }}</dd>
+		<dt>paginator.total_posts</dt>
+		<dd>{{ paginator.total_posts }}</dd>
+		<dt>paginator.total_pages</dt>
+		<dd>{{ paginator.total_pages }}</dd>
+		<dt>paginator.page</dt>
+		<dd>{{ paginator.page }}</dd>
+		<dt>paginator.previous_page</dt>
+		<dd>{{ paginator.previous_page }}</dd>
+		<dt>paginator.next_page</dt>
+		<dd>{{ paginator.next_page }}</dd>
+	</dl>
+</div>
