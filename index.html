@@ -7,7 +7,6 @@ title: Welcome to Your New, Shiny Blog!
 	<h1>Posts</h1>
 </header>
 
-<!-- iterate through the posts on this page -->
 {% for post in paginator.posts %}
 	<article class="index post">
 		<header>
@@ -22,13 +21,13 @@ title: Welcome to Your New, Shiny Blog!
 	<header class="invisible">
 		<h1>Pagination</h1>
 	</header>
-	<!-- links to prev and next pages for browsing thru archives -->
+
 	{% if paginator.previous_page == 1 %}
-		<span id="newer"><a href="/">&laquo;&laquo; Newer Entries</a></span>
+		<span id="newer"><a href="/">Newer Entries</a></span>
 	{% elsif paginator.previous_page %}
-		<span id="newer"><a href="/page{{ paginator.previous_page }}">&laquo;&laquo; Newer Entries</a></span>
+		<span id="newer"><a href="/page{{ paginator.previous_page }}">Newer Entries</a></span>
 	{% endif %}
 	{% if paginator.next_page %}
-		<span id="older"><a href="/page{{ paginator.next_page }}">Older Entries &raquo;&raquo;</a></span>
+		<span id="older"><a href="/page{{ paginator.next_page }}">Older Entries</a></span>
 	{% endif %}
 </aside>
