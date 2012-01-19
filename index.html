@@ -1,0 +1,47 @@
+---
+layout: default
+title: Welcome to Your New, Shiny Blog!
+---
+
+<!-- iterate through the posts on this page -->
+{% for post in paginator.posts %}
+	<article class="index post">
+		<header>
+			<h1>{{ post.title | markdownify }}</h1>
+			<p class="meta"><a href="{{ post.url }}"><time datetime="{{ post.date | date_to_xmlschema }}" pubdate>{{ post.date | date: "%B %d, %Y" }}</time></a></p>
+		</header>
+		{{ post.content | postmorefilter: page.url, "Read the rest of this entry" }}
+	</article>
+{% endfor %}
+
+<aside class="pagination">
+	<!-- links to prev and next pages for browsing thru archives -->
+	{% if paginator.previous_page == 1 %}
+		<span id="newer"><a href="/">&laquo;&laquo; Newer Entries</a></span>
+	{% elsif paginator.previous_page %}
+		<span id="newer"><a href="/page{{ paginator.previous_page }}">&laquo;&laquo; Newer Entries</a></span>
+	{% endif %}
+	{% if paginator.next_page %}
+		<span id="older"><a href="/page{{ paginator.next_page }}">Older Entries &raquo;&raquo;</a></span>
+	{% endif %}
+</aside>
+
+<div>
+	<h1>paginator debug info</h1>
+	<dl>
+		<dt>paginator.per_page</dt>
+		<dd>{{ paginator.per_page }}</dd>
+		<dt>paginator.posts</dt>
+		<dd>{{ paginator.posts }}</dd>
+		<dt>paginator.total_posts</dt>
+		<dd>{{ paginator.total_posts }}</dd>
+		<dt>paginator.total_pages</dt>
+		<dd>{{ paginator.total_pages }}</dd>
+		<dt>paginator.page</dt>
+		<dd>{{ paginator.page }}</dd>
+		<dt>paginator.previous_page</dt>
+		<dd>{{ paginator.previous_page }}</dd>
+		<dt>paginator.next_page</dt>
+		<dd>{{ paginator.next_page }}</dd>
+	</dl>
+</div>
