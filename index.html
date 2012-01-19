@@ -13,7 +13,7 @@ title: Welcome to Your New, Shiny Blog!
 			<h1>{{ post.title | markdownify | strip_html }}</h1>
 			<p class="meta"><a href="{{ post.url }}"><time datetime="{{ post.date | date_to_xmlschema }}" pubdate>{{ post.date | date: "%B %d, %Y" }}</time></a></p>
 		</header>
-		{{ post.content | postmorefilter: page.url, "Read the rest of this entry" }}
+		{{ post.content }}
 	</article>
 {% endfor %}
 
